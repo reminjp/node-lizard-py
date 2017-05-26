@@ -1,0 +1,18 @@
+{
+  "name": "lizard-node",
+  "version": "0.1.0",
+  "description": "A Node.js wrapper for Lizard, a code complexity analyser.",
+  "main": "index.js",
+  "repository": "rdrgn/lizard-node.git",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "metric",
+    "lizard"
+  ],
+  "author": "remin",
+  "license": ""
+}
