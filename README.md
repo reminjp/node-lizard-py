@@ -1,4 +1,4 @@
-# Lizard Node
+# Lizard wrapper
 
 A Node.js wrapper for [Lizard](https://github.com/terryyin/lizard), a code complexity analyser.
 
@@ -13,7 +13,7 @@ A Node.js wrapper for [Lizard](https://github.com/terryyin/lizard), a code compl
 ### Sample code
 
 ```js
-const lizard = require('lizard-node');
+const lizard = require('lizard-wrapper');
 
 var result = lizard.analyzeFile('fizzbuzz.cpp');
 var s = JSON.stringify(result);
