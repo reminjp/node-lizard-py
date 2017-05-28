@@ -35,6 +35,6 @@ fizzbuzz.cpp","top_nesting_level":0,"length":13,"fan_in":0,"fan_out":0,"general_
 count":96}
 ```
 
-### Licence
+## Licence
 
 To be determined.
