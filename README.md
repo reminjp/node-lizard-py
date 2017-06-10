@@ -37,4 +37,4 @@ count":96}
 
 ## Licence
 
-To be determined.
+MIT License
