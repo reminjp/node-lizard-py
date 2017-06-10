@@ -2,11 +2,21 @@
 
 A Node.js wrapper for [Lizard](https://github.com/terryyin/lizard), a code complexity analyser.
 
-## Requirement
+## Requirements
 
 * Node.js
 * Python
 * [Lizard](https://github.com/terryyin/lizard)
+
+```
+pip install lizard
+```
+
+## Installation
+
+```
+npm install lizard-wrapper
+```
 
 ## Usage
 
