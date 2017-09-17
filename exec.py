@@ -10,6 +10,10 @@ def dumps_default(o):
 
 
 options = json.loads(''.join(sys.stdin.readlines()))
-method = getattr(lizard, options['method'])
-result = json.dumps(vars(method(*options['args'])), default=dumps_default)
+
+attribute = lizard
+for i in options['method'].split('.'):
+    attribute = getattr(attribute, i)
+
+result = json.dumps(vars(attribute(*options['args'])), default=dumps_default)
 print(result)
