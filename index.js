@@ -13,6 +13,6 @@ exports.analyzeFile = function (path) {
 }
 
 exports.analyzeSourceCode = function (name, code) {
-	return exec('analyze_source_code', [name, code]);
+	return exec('analyze_file.analyze_source_code', [name, code]);
 }
 
