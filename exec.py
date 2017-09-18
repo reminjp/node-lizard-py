@@ -9,7 +9,7 @@ def dumps_default(o):
     raise TypeError(repr(o) + " is not JSON serializable")
 
 
-options = json.loads(''.join(sys.stdin.readlines()))
+options = json.load(sys.stdin, encoding='utf-8')
 
 attribute = lizard
 for i in options['method'].split('.'):
