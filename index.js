@@ -7,7 +7,15 @@ var exec = function(method, args) {
 	if (!Array.isArray(args)) {
 		args = [];
 	}
-	var input = JSON.stringify({ method: method, args: args });
+	var object = { method: method, args: args };
+	var input = JSON.stringify(object, function(key, value) {
+		if (typeof value === 'string') {
+			return value.replace(/[^\x01-\x7E]/g, function(c) {
+				return '\\u' + ('000' + c.charCodeAt(0).toString(16)).slice(-4);
+			});
+		}
+		return value;
+	});
 	var result = child_process.execFileSync('python', [path_to_execpy], {
 		input: input,
 	});
