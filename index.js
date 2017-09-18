@@ -1,14 +1,14 @@
-const path = require('path');
-const child_process = require('child_process');
+var path = require('path');
+var child_process = require('child_process');
 
-const path_to_execpy = __dirname + path.sep + 'exec.py';
+var path_to_execpy = __dirname + path.sep + 'exec.py';
 
-const exec = function(method, args) {
+var exec = function(method, args) {
 	if (!Array.isArray(args)) {
 		args = [];
 	}
-	let input = JSON.stringify({ method: method, args: args });
-	let result = child_process.execFileSync('python', [path_to_execpy], {
+	var input = JSON.stringify({ method: method, args: args });
+	var result = child_process.execFileSync('python', [path_to_execpy], {
 		input: input,
 	});
 	return JSON.parse(result);
