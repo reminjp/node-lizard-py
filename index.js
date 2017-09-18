@@ -1,6 +1,9 @@
 var child_process = require('child_process');
 
-var exec = function (method, args = []) {
+var exec = function (method, args) {
+	if (!Array.isArray(args)) {
+		args = [];
+	}
 	var input = JSON.stringify({ method: method, args: args });
 	var result = child_process.execFileSync('python', ['exec.py'], { input: input });
 	return JSON.parse(result);
