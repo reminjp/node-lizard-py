@@ -32,15 +32,15 @@ if sys.version[0] == '2':
     from future_builtins import map, filter  # pylint: disable=W0622, F0401
 
 try:
-    from lizard_languages import languages, get_reader_for, CLikeReader
+    from .lizard_languages import languages, get_reader_for, CLikeReader
 except ImportError:
     sys.stderr.write("Cannot find the lizard_languages module.")
     sys.exit(2)
 try:
-    from lizard_ext import print_xml
-    from lizard_ext import print_csv
-    from lizard_ext import html_output
-    from lizard_ext import auto_open, auto_read
+    from .lizard_ext import print_xml
+    from .lizard_ext import print_csv
+    from .lizard_ext import html_output
+    from .lizard_ext import auto_open, auto_read
 except ImportError:
     pass
 
