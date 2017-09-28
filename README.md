@@ -6,11 +6,6 @@ A Node.js wrapper for [Lizard](https://github.com/terryyin/lizard), a code compl
 
 * Node.js
 * Python
-* [Lizard](https://github.com/terryyin/lizard)
-
-```
-pip install lizard
-```
 
 ## Installation
 
