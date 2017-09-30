@@ -1,4 +1,4 @@
-from lizard import lizard
+import lizard
 import json
 import sys
 
