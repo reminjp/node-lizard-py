@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:rdrgn/lizard-wrapper.git"
+    "url": "git@github.com:rdrgn/node-lizard-wrapper.git"
   },
   "dependencies": {},
   "devDependencies": {},
