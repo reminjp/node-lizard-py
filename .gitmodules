@@ -1,0 +1,3 @@
+[submodule "res/lizard"]
+	path = res/lizard
+	url = https://github.com/terryyin/lizard.git
