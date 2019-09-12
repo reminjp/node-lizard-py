@@ -14,6 +14,8 @@
     "url": "git@github.com:rdrgn/node-lizard-py.git"
   },
   "scripts": {
+    "bootstrap": "yarn && yarn run update:lizard",
+    "update:lizard": "git submodule foreach git clean -f && git submodule update --init --recursive && touch res/lizard/__init__.py",
     "build": "rm -rf dist && parcel build src/index.ts --target node --out-dir dist && tsc --emitDeclarationOnly",
     "test": "jest",
     "lint": "eslint --ext .ts,.tsx --ignore-path .gitignore .",
