@@ -4,9 +4,9 @@ A Node.js wrapper for [Lizard](https://github.com/terryyin/lizard), a code compl
 
 ## Requirements
 
-* Node.js
-* Python
-* [Lizard](https://github.com/terryyin/lizard)
+- Node.js
+- Python
+- [Lizard](https://github.com/terryyin/lizard)
 
 ```
 pip install lizard
@@ -15,7 +15,7 @@ pip install lizard
 ## Installation
 
 ```
-npm install lizard-wrapper
+npm install lizard-py
 ```
 
 ## Usage
@@ -23,9 +23,9 @@ npm install lizard-wrapper
 ### Sample code
 
 ```js
-const lizard = require('lizard-wrapper');
+const lizard = require("lizard-py");
 
-var result = lizard.analyzeFile('fizzbuzz.cpp');
+var result = lizard.analyzeFile("fizzbuzz.cpp");
 var s = JSON.stringify(result);
 console.log(s);
 ```
@@ -33,7 +33,7 @@ console.log(s);
 You can also use source code string instead of file.
 
 ```js
-var result = lizard.analyzeSourceCode('foo.cpp', 'int foo(){}');
+var result = lizard.analyzeSourceCode("foo.cpp", "int foo(){}");
 ```
 
 ### Sample output

@@ -1,11 +1,11 @@
 {
-  "name": "lizard-wrapper",
+  "name": "lizard-py",
   "version": "0.1.9",
   "description": "A Node.js wrapper for Lizard, a code complexity analyser.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:rdrgn/node-lizard-wrapper.git"
+    "url": "git@github.com:rdrgn/node-lizard-py.git"
   },
   "dependencies": {},
   "devDependencies": {},
