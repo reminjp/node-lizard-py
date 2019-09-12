@@ -1,0 +1,39 @@
+{
+  "filename": "{filename}",
+  "function_list": [
+    {
+      "cyclomatic_complexity": 6,
+      "end_line": 15,
+      "fan_in": 0,
+      "fan_out": 0,
+      "filename": "{filename}",
+      "general_fan_out": 0,
+      "length": 13,
+      "long_name": "fizzbuzz( int n)",
+      "name": "fizzbuzz",
+      "nloc": 13,
+      "parameters": ["n"],
+      "start_line": 3,
+      "token_count": 112,
+      "top_nesting_level": 0
+    },
+    {
+      "cyclomatic_complexity": 1,
+      "end_line": 21,
+      "fan_in": 0,
+      "fan_out": 0,
+      "filename": "{filename}",
+      "general_fan_out": 0,
+      "length": 5,
+      "long_name": "main()",
+      "name": "main",
+      "nloc": 5,
+      "parameters": [],
+      "start_line": 17,
+      "token_count": 20,
+      "top_nesting_level": 0
+    }
+  ],
+  "nloc": 19,
+  "token_count": 136
+}
