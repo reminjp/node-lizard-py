@@ -22,27 +22,46 @@ npm install lizard-py
 
 ### Sample code
 
-```js
-const lizard = require("lizard-py");
+```ts
+const lizard = require('lizard-py');
 
-var result = lizard.analyzeFile("fizzbuzz.cpp");
+var result = lizard.analyzeFile('fizzbuzz.cpp');
 var s = JSON.stringify(result);
 console.log(s);
 ```
 
 You can also use source code string instead of file.
 
-```js
-var result = lizard.analyzeSourceCode("foo.cpp", "int foo(){}");
+```ts
+var result = lizard.analyzeSourceCode('foo.cpp', 'int foo(){}');
 ```
 
 ### Sample output
 
 ```json
-{"filename":"fizzbuzz.cpp","nloc":15,"function_list":[{"cyclomatic_complexity":6,"nloc":13,"token_co
-unt":89,"name":"main","long_name":"main()","start_line":3,"end_line":15,"parameters":[],"filename":"
-fizzbuzz.cpp","top_nesting_level":0,"length":13,"fan_in":0,"fan_out":0,"general_fan_out":0}],"token_
-count":96}
+{
+  "filename": "fizzbuzz.cpp",
+  "nloc": 15,
+  "function_list": [
+    {
+      "cyclomatic_complexity": 6,
+      "nloc": 13,
+      "token_count": 89,
+      "name": "main",
+      "long_name": "main()",
+      "start_line": 3,
+      "end_line": 15,
+      "parameters": [],
+      "filename": "fizzbuzz.cpp",
+      "top_nesting_level": 0,
+      "length": 13,
+      "fan_in": 0,
+      "fan_out": 0,
+      "general_fan_out": 0
+    }
+  ],
+  "token_count": 96
+}
 ```
 
 ## Licence
