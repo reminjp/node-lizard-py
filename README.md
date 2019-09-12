@@ -1,5 +1,9 @@
 # Lizard on npm
 
+[![Latest NPM release][npm-badge]][npm-badge-url]
+[![Install Size][npm-size-badge]][npm-size-badge-url]
+[![License][license-badge]][license-badge-url]
+
 A Node.js wrapper for [Lizard](https://github.com/terryyin/lizard), a code complexity analyser.
 
 ## Requirements
@@ -33,4 +37,11 @@ const result = lizard.analyzeSourceCode('foo.cpp', 'int foo(){}');
 
 ## Licence
 
-MIT License
+[![License][license-badge]][license-badge-url]
+
+[npm-badge]: https://img.shields.io/npm/v/lizard-py.svg
+[npm-badge-url]: https://www.npmjs.com/package/lizard-py
+[npm-size-badge]: https://packagephobia.now.sh/badge?p=lizard-py
+[npm-size-badge-url]: https://packagephobia.now.sh/result?p=lizard-py
+[license-badge]: https://img.shields.io/npm/l/lizard-py.svg
+[license-badge-url]: ./LICENSE
