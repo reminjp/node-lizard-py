@@ -3,7 +3,7 @@
   "function_list": [
     {
       "cyclomatic_complexity": 6,
-      "end_line": 15,
+      "end_line": 16,
       "fan_in": 0,
       "fan_out": 0,
       "filename": "{filename}",
@@ -13,13 +13,13 @@
       "name": "fizzbuzz",
       "nloc": 13,
       "parameters": ["n"],
-      "start_line": 3,
+      "start_line": 4,
       "token_count": 112,
       "top_nesting_level": 0
     },
     {
       "cyclomatic_complexity": 1,
-      "end_line": 21,
+      "end_line": 23,
       "fan_in": 0,
       "fan_out": 0,
       "filename": "{filename}",
@@ -29,7 +29,7 @@
       "name": "main",
       "nloc": 5,
       "parameters": [],
-      "start_line": 17,
+      "start_line": 19,
       "token_count": 20,
       "top_nesting_level": 0
     }
