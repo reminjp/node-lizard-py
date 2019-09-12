@@ -2,20 +2,53 @@
   "name": "lizard-py",
   "version": "0.1.9",
   "description": "A Node.js wrapper for Lizard, a code complexity analyser.",
-  "main": "index.js",
+  "license": "MIT",
+  "author": "remin",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git@github.com:rdrgn/node-lizard-py.git"
   },
-  "dependencies": {},
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rm -rf dist && parcel build src/index.ts --target node --out-dir dist && tsc --emitDeclarationOnly",
+    "test": "jest",
+    "lint": "eslint --ext .ts,.tsx --ignore-path .gitignore .",
+    "fix": "eslint --fix --ext .ts,.tsx --ignore-path .gitignore ."
   },
-  "keywords": [
-    "metric",
-    "lizard"
-  ],
-  "author": "remin",
-  "license": "MIT"
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@typescript-eslint/eslint-plugin": "^2.2.0",
+    "@typescript-eslint/parser": "^2.2.0",
+    "eslint": "^6.3.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^3.0.5",
+    "jest": "^24.9.0",
+    "lint-staged": "^9.2.5",
+    "parcel-bundler": "^1.12.3",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.6.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js?(x),ts?(x)}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{?(s)css,htm?(l),json,md,y?(a)ml}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
 }
