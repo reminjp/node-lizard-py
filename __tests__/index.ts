@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import * as lizard from '../src';
+import * as lizard from '../dist';
 
 describe('test', () => {
   const inputPath = path.resolve(__dirname, 'input.cpp');
