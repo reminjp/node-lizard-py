@@ -7,7 +7,9 @@ describe('test', () => {
   const outputPath = path.resolve(__dirname, 'output.json');
 
   const input = fs.readFileSync(inputPath, { encoding: 'utf-8' });
-  const output = fs.readFileSync(outputPath, { encoding: 'utf-8' }).replace(/\{filename\}/g, inputPath);
+  const output = fs
+    .readFileSync(outputPath, { encoding: 'utf-8' })
+    .replace(/\{filename\}/g, inputPath.replace(/\\/g, '\\\\'));
   const outputObject = JSON.parse(output);
 
   test('analyzeFile', async done => {
