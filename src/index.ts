@@ -1,7 +1,7 @@
 import * as path from 'path';
 import * as child_process from 'child_process';
 
-const pathToExecPy = path.resolve(__dirname, '..', 'res', 'exec.py');
+const pathToExecPy = path.resolve(__dirname, 'exec.py');
 
 async function exec(method, args = []) {
   const object = { method, args };
