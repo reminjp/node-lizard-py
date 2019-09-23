@@ -19,7 +19,8 @@
     "build": "rm -rf dist && parcel build src/index.ts --target node --out-dir dist && tsc --emitDeclarationOnly && cp -r res/* dist && touch dist/lizard/__init__.py",
     "test": "jest",
     "lint": "eslint --ext .ts,.tsx --ignore-path .gitignore .",
-    "fix": "eslint --fix --ext .ts,.tsx --ignore-path .gitignore ."
+    "fix": "eslint --fix --ext .ts,.tsx --ignore-path .gitignore .",
+    "prepublishOnly": "yarn run build"
   },
   "dependencies": {},
   "devDependencies": {
