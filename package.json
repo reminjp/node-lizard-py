@@ -5,8 +5,7 @@
   "license": "MIT",
   "author": "remin",
   "files": [
-    "dist",
-    "res"
+    "dist"
   ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -16,8 +15,8 @@
   },
   "scripts": {
     "bootstrap": "yarn && yarn run update:lizard",
-    "update:lizard": "git submodule foreach git clean -f && git submodule update --init --recursive && touch res/lizard/__init__.py",
-    "build": "rm -rf dist && parcel build src/index.ts --target node --out-dir dist && tsc --emitDeclarationOnly",
+    "update:lizard": "git submodule foreach git clean -f && git submodule update --init --recursive",
+    "build": "rm -rf dist && parcel build src/index.ts --target node --out-dir dist && tsc --emitDeclarationOnly && cp -r res/* dist && touch dist/lizard/__init__.py",
     "test": "jest",
     "lint": "eslint --ext .ts,.tsx --ignore-path .gitignore .",
     "fix": "eslint --fix --ext .ts,.tsx --ignore-path .gitignore ."
