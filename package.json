@@ -1,6 +1,6 @@
 {
   "name": "lizard-py",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A Node.js wrapper for Lizard, a code complexity analyser.",
   "license": "MIT",
   "author": "remin",
